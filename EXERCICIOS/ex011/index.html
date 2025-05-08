@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDIAS</title>
+</head>
+<body>
+    <h1>Imagens Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminue o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem teste">
+    </picture>
+    <h1>Adicionando midias de audio</h1>
+    <p>aprendendo a repoduzir audios em HTML</p>
+    <center>
+        <audio src="midia/seipartirbacoexu.mp3" controls loop></audio>
+        <p>caso nao consiga reproduzir, clique <a href="midia/seipartirbacoexu.mp3" download="">aqui</a> para o download do arquivo</p>
+    </center>
+    
+    
+</body>
+</html>

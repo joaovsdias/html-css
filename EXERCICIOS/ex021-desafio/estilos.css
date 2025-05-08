@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #019b53;
+    margin: 0%;
+}
+
+main{
+    background-color: white;
+    text-align: center;
+    margin: 0% 15%;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 0 5%; /* Menor margem em telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        margin: 0 2%; /* Ajuste ainda maior para telas muito pequenas */
+    }
+}
+
+header{
+    background: linear-gradient(to bottom, #019b53, #132c20);
+    width: 100vw;
+    height: 16vh;
+    padding: 10px;
+    margin: 0px;
+}
+
+header h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Ajuste para tamanho de fonte menor em telas pequenas */
+    }
+}
+
+main section h1 {
+    font-family: idroid;
+    color: #019b53;
+    background: linear-gradient(to right, #02ff893b, #fdfdfd);
+    text-align: left;
+    margin-top: 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section.historia h1{
+    display: block;
+    margin: 0px;
+    padding: 16px;
+    background: none;
+}
+
+
+header p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding-top: 0px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 23px;
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.3s;    
+}
+
+nav ul a:hover{
+    background-color: #02b15a88;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+
+p{
+    text-indent: 2em;
+    font-size: 1.3em;
+    text-align: justify;
+    margin: 10px;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #019b53;
+    font-weight: bold;
+}
+
+p a:hover{
+    color: #044e29;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.image{
+    width: 94%;
+    height: auto;
+}
+
+.imagem{
+    width: 35%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .image {
+        width: 100%; /* Garantir que as imagens ocuparam toda a largura da tela em telas menores */
+    }
+
+    .imagem {
+        width: 80%; /* Ajustar a largura das imagens menores */
+    }
+}
+
+
+main section.verde{
+    background-color: #013f22;
+    color: white;
+    padding: 30px;
+    margin: 0px;
+}
+
+.extra{
+    background-color: #02b35d5b;
+    color: rgb(0, 0, 0);
+    padding: 0px 0px 12px 0px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+.extra h2{
+    text-align: left;
+    background-color: #00944f;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+p.final{
+    text-align: justify;
+    font-size: 1.5em;
+    margin: 15px;
+    padding: 10px;
+}
+
+.listas{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin: 10px;
+}
+@media screen and (max-width: 768px) {
+    .listas {
+        flex-direction: column; /* Empilhar as listas verticalmente em telas menores */
+        gap: 20px; /* Menor espaço entre as listas */
+    }
+}
+
+.listar{
+    text-decoration: underline;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+}	
+
+.listar li{
+    text-align: justify;
+}
+
+.listar li::before{
+    content: '✔';
+    padding-right: 5px;
+}
+
+footer{
+    display: block;
+    background-color: #013f22;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px auto;
+}
+footer h4 {
+    font-size: 1em; /* Ajuste o tamanho da fonte */
+}
+
+@media screen and (max-width: 768px) {
+    footer h4 {
+        font-size: 0.8em; /* Menor tamanho de fonte em telas pequenas */
+    }
+}
+
+/* Quebra visual ou comentário explicativo aqui, se quiser */
+
+
+/* Tamanhos de tela grandes */
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 0 15%;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+}
+
+/* Tablets e telas médias */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    main {
+        margin: 0 10%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .listas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer h4 {
+        font-size: 1em;
+    }
+}
+
+/* Telas pequenas (celulares) */
+@media screen and (max-width: 768px) {
+    main {
+        margin: 0 5%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .listas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .imagem {
+        width: 80%;
+    }
+
+    footer h4 {
+        font-size: 0.9em;
+    }
+}
+
+/* Telas muito pequenas */
+@media screen and (max-width: 480px) {
+    main {
+        margin: 0 2%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    footer h4 {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+
+
+
+
